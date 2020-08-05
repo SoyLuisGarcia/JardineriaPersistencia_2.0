@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jardineriapersistencia.FXMLDocumentController">
+   <children>
+      <Button fx:id="MySQL" layoutX="347.0" layoutY="96.0" mnemonicParsing="false" onAction="#conexcionMySQL" prefHeight="31.0" prefWidth="88.0" text="MySQL" />
+      <Button fx:id="SQL" layoutX="347.0" layoutY="44.0" mnemonicParsing="false" onAction="#conexcionSQLServer" text="SQLServer" />
+      <TextField fx:id="cajaUsuario" layoutX="37.0" layoutY="44.0" promptText="Ingrese el usuario" />
+      <Button fx:id="iniciar" layoutX="37.0" layoutY="149.0" mnemonicParsing="false" onAction="#iniciarPrograma" text="Start" />
+      <Label layoutX="232.0" layoutY="49.0" text="Usuario" />
+      <Label layoutX="232.0" layoutY="101.0" text="Contraseña" />
+      <PasswordField fx:id="cajaPassword" layoutX="37.0" layoutY="96.0" promptText="Ingrese su contraseña" />
+   </children>
+</AnchorPane>

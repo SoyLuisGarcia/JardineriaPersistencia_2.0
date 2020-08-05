@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Daos">
+  <class name="Almanaque" table="almanaque">
+    <id column="id_almanaque" name="id_almanaque" type="java.lang.Integer" unsaved-value="null">
+      <generator class="native">
+            </generator>
+    </id>
+    <property column="fecha_foto" name="fecha_foto"/>
+    <property column="foto" name="foto"/>
+    <many-to-one class="Productos" fetch="select" name="Producto">
+      <column name="id_planta" not-null="true"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

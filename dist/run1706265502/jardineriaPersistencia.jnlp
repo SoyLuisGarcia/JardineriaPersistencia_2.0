@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="jardineriaPersistencia.jnlp">
+  <information>
+    <title>jardineriaPersistencia</title>
+    <vendor>claud</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="jardineriaPersistencia.jar" size="40677" download="eager" />
+    <jar href="lib\antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib\classmate-0.5.4.jar" size="57963" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-4.0.1.Final.jar" size="81271" download="eager" />
+    <jar href="lib\hibernate-core-4.0.0.Final.jar" size="4242884" download="eager" />
+    <jar href="lib\hibernate-jpa-2.0-api-1.0.1.Final.jar" size="102661" download="eager" />
+    <jar href="lib\jandex-1.0.3.Final.jar" size="70928" download="eager" />
+    <jar href="lib\javassist-3.12.1.GA.jar" size="644148" download="eager" />
+    <jar href="lib\jboss-logging-3.1.0.CR2.jar" size="60539" download="eager" />
+    <jar href="lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar" size="11209" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.3-rc-bin.jar" size="646552" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="jardineriaPersistencia" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="jardineriapersistencia.JardineriaPersistencia"  name="jardineriaPersistencia" />
+  <update check="always"/>
+</jnlp>

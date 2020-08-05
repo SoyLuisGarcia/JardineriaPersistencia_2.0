@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="aplicacionPrincipal.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="700.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+      <Button fx:id="productos" mnemonicParsing="false" onAction="#seccionProductos" prefHeight="76.0" prefWidth="195.0" text="PRODUCTOS" />
+      <Button fx:id="tipos" layoutY="76.0" mnemonicParsing="false" onAction="#seccionTipos" prefHeight="76.0" prefWidth="195.0" text="TIPOS DE PLANTAS" />
+      <Button fx:id="riego" layoutY="152.0" mnemonicParsing="false" onAction="#seccionRiego" prefHeight="76.0" prefWidth="195.0" text="REGISTRO DE RIEGOS" />
+      <Button fx:id="almanaque" layoutY="228.0" mnemonicParsing="false" onAction="#seccionAlmanaque" prefHeight="76.0" prefWidth="195.0" text="ALMANAQUE DE FOTOGRAFIAS" wrapText="true" />
+   </children>
+</AnchorPane>

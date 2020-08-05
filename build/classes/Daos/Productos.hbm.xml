@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Daos">
+  <class name="Productos" table="producto">
+    <id column="id" name="id" type="java.lang.Integer" unsaved-value="null">
+      <generator class="native">
+            </generator>
+    </id>
+    <property column="nombre_planta" name="nombre_planta"/>
+    <property column="fecha_ingreso" name="fecha_ingreso"/>
+    <property column="status" name="status"/>
+    <bag fetch="select" inverse="true" lazy="true" name="Almanaque" table="almanaque">
+      <key>
+        <column name="id" not-null="true"/>
+      </key>
+      <one-to-many class="Almanaque"/>
+    </bag>
+    <bag fetch="select" inverse="true" lazy="true" name="Tipo" table="tipo">
+      <key>
+        <column name="id" not-null="true"/>
+      </key>
+      <one-to-many class="Tipos"/>
+    </bag>
+    <bag fetch="select" inverse="true" lazy="true" name="Riego" table="riego">
+      <key>
+        <column name="id" not-null="true"/>
+      </key>
+      <one-to-many class="Riego"/>
+    </bag>
+  </class>
+</hibernate-mapping>
